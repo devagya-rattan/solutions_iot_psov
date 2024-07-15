@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 3vh;
+  /* height: 100vh; */
+}
+.register-form form {
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 5vh 2vw;
+  width: 80%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border: 1px solid #8b008b;
+  /* background-color: white; */
+  /* background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%); */
+}
+.register-form form p {
+  margin-top: 2vh;
+}
+.links {
+  text-decoration: none;
+  color: black;
+  color: white;
+}
+.logo {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  background-color: #8b008b;
+}
+.userprofile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1vh 3vw;
+  font-size: 15px;
+  gap: 0.5vw;
+  cursor: pointer;
+}
+
+.flexdiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row;
+  background-color: whitesmoke;
+  position: absolute;
+  left: 100%;
+  color: #8b008b;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+.active {
+  transition: all 0.9s ease-in-out;
+  left: 0%;
+  position: absolute;
+  z-index: 999;
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  color: #8b008b;
+  padding: 2vw;
+  display: block;
+}
+.userheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vh;
+  border-bottom: 2px solid black;
+}
+.userhistory {
+  margin-top: 4vh;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 3vh;
+  border-bottom: 2px solid black;
+}
+.hisheading {
+  color: #8b008b;
+  text-decoration: none;
+}
+.button {
+  padding: 1vh 3vw;
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.error-buttons {
+  padding: 0.5vh 1vw;
+  background-color: #00cdac;
+  border-radius: 10px;
+  border: none;
+}
+.errormessage {
+  position: absolute;
+  right: 100%;
+  display: none;
+}
+.errormessage-active {
+  /* bottom: 0%; */
+  transition: all 0.9s ease-in-out;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  padding: 2vh;
+}
+.errorbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  gap: 2vw;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 2vh;
+  font-size: 20px;
+  gap: 2vh;
+}
+.about p {
+  padding: 0 4vw;
+  color: #8b008b;
+}
+.about h2 {
+  font-weight: 500;
+}
+.sectors-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  gap: 2vh;
+}
+.imageicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 3vh 4vw;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+.card {
+  /* height: 20vh;
+  width: 20vw; */
+  cursor: pointer;
+  border: 1px solid black;
+  /* background-color: #966f96; */
+  transition: all 0.2s ease-in-out;
+}
+.card h2 {
+  height: 100%;
+  width: 100%;
+}
+.paragraph {
+  color: #8b008b;
+}
+.card:hover {
+  transform: scale(0.9);
+}
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.mainhistory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 4vh;
+}
+.content-heading {
+  color: #8b008b;
+  font-weight: 800;
+  text-decoration: underline;
+}
+.division {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 3vh;
+}
+.content-div {
+  /* width: 80vw; */
+  height: 40vh;
+  border: 2px solid #8b008b;
+  border-radius: 5px;
+  padding: 2vh 3vw;
+}
+.allheading{
+  color: #8b008b;
+  padding: 5vh 5vw;
+}
+.globecontent{
+  padding: 5vh 5vw;
+}
+.globe{
+  padding: 0 5vw;
+}
+@media (max-width: 946px) {
+  .active {
+    left: 0;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    color: #8b008b;
+    padding: 2vw;
+  }
+  .about {
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 3vw;
+  }
+  .register-form form {
+    width: 90%;
+  }
+}

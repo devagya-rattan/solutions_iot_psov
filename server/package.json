@@ -1,0 +1,27 @@
+{
+  "name": "start-up",
+  "version": "1.0.0",
+  "description": "A startup website",
+  "main": "index.js",
+ "scripts": {
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node app.js",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "start-client": "cd client && npm run start"
+  },
+  "keywords": [
+    "Startup",
+    "problem-solver"
+  ],
+  "author": "Devagya Rattan",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0"
+  }
+}
